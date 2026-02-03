@@ -1,0 +1,29 @@
+{
+  "gejala": {
+    "G1": "Sering buang air kecil",
+    "G2": "Sering haus",
+    "G3": "Lemas/kelelahan",
+    "G4": "Penglihatan kabur",
+    "G5": "Luka lama sembuh",
+    "G6": "Sakit kepala",
+    "G7": "Pusing",
+    "G8": "Mual",
+    "G9": "Sesak napas",
+    "G10": "Wajah memerah",
+    "G11": "Kesemutan di tangan/kaki",
+    "G12": "Riwayat keluarga diabetes",
+    "G13": "Riwayat keluarga hipertensi"
+  },
+  "aturan": [
+    {
+      "id": "R1",
+      "if": ["G1","G2","G3","G4","G5","G11","G12"],
+      "then": "Kemungkinan Diabetes"
+    },
+    {
+      "id": "R2",
+      "if": ["G6","G7","G8","G9","G10","G13"],
+      "then": "Kemungkinan Hipertensi"
+    }
+  ]
+}
